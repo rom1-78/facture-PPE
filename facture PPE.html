@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="facture PPE css.css">
+
+	<script type="text/javascript">
+		function calculate()
+		{
+			var x= Number(document.getElementById("un").value); 
+			var y= Number(document.getElementById("deux").value);
+			var z= Number(document.getElementById("trois").value);
+
+			var a= Number(document.getElementById("un1").value); 
+			var b= Number(document.getElementById("deux1").value);
+			var c= Number(document.getElementById("trois1").value);
+
+			var d= Number(document.getElementById("un2").value); 
+			var e= Number(document.getElementById("deux2").value);
+			var f= Number(document.getElementById("trois2").value);
+
+			var g= Number(document.getElementById("un3").value); 
+			var h= Number(document.getElementById("deux3").value);
+			var i= Number(document.getElementById("trois3").value);
+
+			var j= Number(document.getElementById("un4").value); 
+			var k= Number(document.getElementById("deux4").value);
+			var l= Number(document.getElementById("trois4").value);
+
+			var m= Number(document.getElementById("un5").value); 
+			var n= Number(document.getElementById("deux5").value);
+			var o= Number(document.getElementById("trois5").value);
+
+			var p= Number(document.getElementById("un6").value); 
+			var q= Number(document.getElementById("deux6").value);
+			var r= Number(document.getElementById("trois6").value);
+
+			var s= Number(document.getElementById("un7").value); 
+			var t= Number(document.getElementById("deux7").value);
+			var u= Number(document.getElementById("trois7").value);
+
+			var v= Number(document.getElementById("un8").value); 
+			var w= Number(document.getElementById("deux8").value);
+			var plk= Number(document.getElementById("trois8").value);
+
+			var x1= Number(document.getElementById("un9").value); 
+			var y1= Number(document.getElementById("deux9").value);
+			var z1= Number(document.getElementById("trois9").value);
+
+			var a1= Number(document.getElementById("un10").value); 
+			var b1= Number(document.getElementById("deux10").value);
+			var c1= Number(document.getElementById("trois10").value);
+
+			document.getElementById("answer").value=(y*z); 
+			document.getElementById("answer1").value=(b*c);
+			document.getElementById("answer2").value=(e*f);
+			document.getElementById("answer3").value=(h*i);
+			document.getElementById("answer4").value=(k*l);
+			document.getElementById("answer5").value=(n*o);
+			document.getElementById("answer6").value=(q*r);
+			document.getElementById("answer7").value=(t*u);
+			document.getElementById("answer8").value=(w*plk);
+			document.getElementById("answer9").value=(y1*z1);
+			document.getElementById("answer10").value=(b1*c1);
+			document.getElementById("total").value=(b*c+e*f+y*z);
+		}
+		
+	</script>	
+</head>
+<body>
+	
+	<div class="page">
+	<header>
+		
+	</header>
+	<form>
+		<div class="informations">
+
+			<nav>
+				<ul>
+					<li>
+						<div class="img">
+							<img src="logo.png">
+						</div>
+					</li>
+					<li>
+						<div class="informations-gauche">
+							<input type="text" name="info1" id="info1" placeholder="Nom de la compagnie"><br>
+							<input type="text" name="info2" id="info2" placeholder="adresse postale"><br>
+							<input type="text" name="info3" id="info3" placeholder="details du contact"><br>
+						</div>
+					</li>
+					<li>
+						<div class="informations-droite">
+							<h1>facture</h1>
+								<input type="text" name="date" id="date" placeholder="date"><br>
+								<input type="text" name="N° de facture" id="N° de facture" placeholder="N° de facture"><br>
+							</div>
+					</li>
+				</ul>
+			</nav>
+
+			
+
+		</div>
+
+		<div class="destinataires">
+
+		<div class="conditions">
+			<input type="text" name="conditions de paiement" id="conditions de paiement" placeholder="conditions de paiement, par exemple dû dans X jours">
+		</div>
+
+		<div class="destinataire">
+			<h2>destinataire</h2>
+			<input type="text" name="Nom" id="Nom" placeholder="Nom"><br>
+			<input type="text" name="Nom de la société" id="Nom de la société" placeholder="Nom de la société"><br>
+			<input type="text" name="Adresse postale" id="Adresse postale" placeholder="Adresse postale"><br>
+			<input type="text" name="Téléphone" id="Téléphone" placeholder="Téléphone"><br>
+			<input type="text" name="Email" id="Email" placeholder="Email">
+
+		<div class="receveur">
+			<h2>envoyer à </h2>
+			<input type="text" name="Nom" id="Nom" placeholder="Nom"><br>
+			<input type="text" name="Nom de la société" id="Nom de la société" placeholder="Nom de la société"><br>
+			<input type="text" name="Adresse postale" id="Adresse postale" placeholder="Adresse postale"><br>
+			<input type="text" name="Téléphone" id="Téléphone" placeholder="Téléphone"><br>
+			<input type="text" name="Email" id="Email" placeholder="Email">
+		</div>
+
+		</div>
+
+		<div class="facture">
+		<table>
+			<tr class="ligne1">
+				<td>Description</td>
+				<td>Quantité</td>
+				<td>Prix unitaire</td>
+				<td>Total</td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un" id="un" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux" id="deux" value="0"></td>
+				<td><input type="text" name="trois" id="trois"	value="0"></td>
+				<td><input type="text" name="answer" id="answer" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un1" id="un1" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux1" id="deux1" value="0"></td>
+				<td><input type="text" name="trois1" id="trois1" value="0"></td>
+				<td><input type="text" name="answer1" id="answer1" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un2" id="un2" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux2" id="deux2" value="0"></td>
+				<td><input type="text" name="trois2" id="trois2" value="0"></td>
+				<td><input type="text" name="answer2" id="answer2" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un3" id="un3" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux3" id="deux3" value="0"></td>
+				<td><input type="text" name="trois3" id="trois3" value="0"></td>
+				<td><input type="text" name="answer3" id="answer3" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un4" id="un4" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux4" id="deux4" value="0"></td>
+				<td><input type="text" name="trois4" id="trois4" value="0"></td>
+				<td><input type="text" name="answer4" id="answer4" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un5" id="un5" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux5" id="deux5" value="0"></td>
+				<td><input type="text" name="trois5" id="trois5" value="0"></td>
+				<td><input type="text" name="answer5" id="answer5" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un6" id="un6" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux6" id="deux6" value="0"></td>
+				<td><input type="text" name="trois6" id="trois6" value="0"></td>
+				<td><input type="text" name="answer6" id="answer6" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un7" id="un7" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux7" id="deux7" value="0"></td>
+				<td><input type="text" name="trois7" id="trois7" value="0"></td>
+				<td><input type="text" name="answer7" id="answer7" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un8" id="un8" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux8" id="deux8" value="0"></td>
+				<td><input type="text" name="trois8" id="trois8" value="0"></td>
+				<td><input type="text" name="answer8" id="answer8" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un9" id="un9" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux9" id="deux9" value="0"></td>
+				<td><input type="text" name="trois9" id="trois9" value="0"></td>
+				<td><input type="text" name="answer9" id="answer9" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="un10" id="un10" placeholder="saisir la désignation"></td>
+				<td><input type="text" name="deux10" id="deux10" value="0"></td>
+				<td><input type="text" name="trois10" id="trois10" value="0"></td>
+				<td><input type="text" name="answer10" id="answer10" value="0"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="remarque" id="remarque" placeholder="remarque, note et instruction de payement"></td>
+				<td></td>
+				<td>sous-total</td>
+				<td><input type="text" name="answer11" id="answer11" value="0"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>remise</td>
+				<td><input type="text" name="answer12" id="answer12" value="0"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>sous-total moins les remises</td>
+				<td><input type="text" name="answer13" id="answer13" value="0"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>taux d'imposition</td>
+				<td><input type="text" name="answer14" id="answer14" value="0%"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>taxe total</td>
+				<td><input type="text" name="answer15" id="answer15" value="0"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>expediton et manutention</td>
+				<td><input type="text" name="answer16" id="answer16" value="0"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>solde du</td>
+				<td><input type="text" name="answer17" id="answer17" value="0"></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><input type="text" name="answer18" id="answer18" value=""></td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type="reset" name="t1"></td>
+				<td><input onclick="calculate()" type="button" value="Addition"></td>
+				<td><input type="text" name="total" id="total"></td>
+			</tr>
+		</div>
+		</table>
+		<nav>
+		<ul>
+			<li>
+				<a href="index.html">
+					<button>retour au menu principal</button>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<footer>
+			
+	</footer>
+	</form>
+	</div>
+</body>
+</html>
